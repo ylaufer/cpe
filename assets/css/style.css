@@ -561,6 +561,13 @@ section {
   font-weight: 600;
   font-size: 26px; }
 
+.about .content p {
+  font-size: 24px; }
+
+.about .content span {
+  color: #106eea;
+  font-weight: 600; }
+
 .about .content ul {
   list-style: none;
   padding: 0; }
@@ -582,7 +589,8 @@ section {
     font-size: 18px;
     color: #555555; }
   .about .content ul p {
-    font-size: 15px; }
+    font-size: 24px;
+    line-height: 10px; }
 
 .about .content p:last-child {
   margin-bottom: 0; }
@@ -693,9 +701,9 @@ section {
       font-size: 28px;
       transition: ease-in-out 0.3s; }
   .services .icon-box h4 {
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 15px;
-    font-size: 24px; }
+    font-size: 22px; }
     .services .icon-box h4 a {
       color: #222222;
       transition: ease-in-out 0.3s; }
