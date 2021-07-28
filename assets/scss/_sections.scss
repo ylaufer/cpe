@@ -20,8 +20,9 @@ section {
     font-weight: 700;
     padding: 8px 20px;
     margin: 0;
-    background: lighten($primary, 46);
-    color: $primary;
+    // background: lighten($black, 46);
+    background: $black;
+    color: $yellow;
     display: inline-block;
     text-transform: uppercase;
     border-radius: 50px;
@@ -31,8 +32,9 @@ section {
     margin: 15px 0 0 0;
     font-size: 32px;
     font-weight: 700;
+    color: $black;
     span {
-      color: $primary;
+      color: $yellow;
     }
   }
   
@@ -127,7 +129,7 @@ section {
   .icon-box::before {
     content: '';
     position: absolute;
-    background: lighten($primary, 40);
+    background: lighten($yellow, 40);
     right: 0;
     left: 0;
     bottom: 0;
@@ -186,33 +188,45 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
+  img {
+    border-radius: 5px;
+  }
   .content {
     h3 {
       font-weight: 600;
       font-size: 26px;
     }
-    
+    .icon {
+      margin-right: 15px;
+      float: left;
+      color: #fdc236;
+      font-size: 30px;
+    }
+
+    h5 {
+      font-size: 15px;
+    }
+
     p {
-      font-size: 24px;
+      font-size: 14px;
+      line-height: 24px;
+      color: #878787;
+    }
+
+    .in {
+      font-size: 13px;
+      line-height: 1.5;
     }
     
-    span {
-      color: $primary;
-      font-weight: 600;
-    } 
-
     ul {
-      list-style: none;
       padding: 0;
+      list-style-type: square;
       
       li {
-        display: flex;
         align-items: flex-start;
-        margin-bottom: 35px;
-      }
-
-      li:first-child {
-        margin-top: 35px;
+        list-style-type: square;
+        color: #878787;
+        font-size: 13px;
       }
 
       i {
@@ -348,20 +362,32 @@ section {
 --------------------------------------------------------------*/
 .services {
 
+  .ancho {
+    width: 75%;
+  }
+
+  @media screen and (max-width: 992px) {
+    .ancho {
+      width: 100%;
+    }  
+  }
+
   .icon-box {
     text-align: center;
-    border: 1px solid lighten($primary, 45);
+    border: 1px solid lighten($black, 45);
     padding: 80px 20px;
     transition: all ease-in-out 0.3s;
     background: $white;
 
+  
     .icon {
       margin: 0 auto;
       width: 64px;
       height: 64px;
-      background: lighten($primary, 48);
+      // background: lighten($black, 48);
+      background: $white;
       border-radius: 4px;
-      border: 1px solid lighten($primary, 44);
+      border: 1px solid lighten($black, 44);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -369,12 +395,13 @@ section {
       transition: ease-in-out 0.3s;
 
       i {
-        color: lighten($primary, 10);
+        color: lighten($yellow, 10);
         font-size: 28px;
         transition: ease-in-out 0.3s;
       }
   
     }
+
 
     h4 {
       font-weight: 500;
@@ -387,25 +414,32 @@ section {
   
     }
 
-    p {
+    p a {
       line-height: 24px;
       font-size: 14px;
       margin-bottom: 0;
+      color: #878787;
+    }
+
+    p a:hover {
+      text-decoration: underline;
+      color: $yellow;
     }
 
     &:hover {
       border-color: $white;
-      box-shadow: 0px 0 25px 0 rgba($primary, 0.10);
+      box-shadow: 0px 0 25px 0 rgba($black, 0.10);
       h4 a, .icon i {
-        color: $primary;
+        color: $yellow;
       }
 
       .icon {
-        border-color: $primary;
+        border-color: $yellow;
       }
     }
   }
 }
+
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -670,7 +704,7 @@ section {
       font-weight: 700;
       margin-bottom: 20px;
       padding-bottom: 20px;
-      border-bottom: 1px solid #eee;
+      border-bottom: 1px solid rgb(68, 18, 18);
     }
 
     ul {

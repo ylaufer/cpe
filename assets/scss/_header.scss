@@ -2,11 +2,11 @@
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: $primary;
+  background: $yellow;
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
-  color: $white;
+  color: $black;
 
   &.topbar-scrolled {
     top: -40px;
@@ -15,8 +15,8 @@
   .contact-info {
     a {
       line-height: 1;
-      color: $white;
       transition: 0.3s;
+      color: $black;
       &:hover {
         text-decoration: underline;
       }
@@ -25,6 +25,7 @@
     i {
       padding-right: 4px;
       margin-left: 15px;
+      color: $black;
     }
 
     i:first-child {
@@ -33,16 +34,10 @@
   }
 
   .social-links {
-    a {
-      color: rgba($white, .6);
+      color: $black;
       padding-left: 15px;
       display: inline-block;
-      line-height: 1px;
-      transition: 0.3s;
-      &:hover {
-        color: $white;
-      }
-    }
+      line-height: 1px;     
   }
 }
 
@@ -75,7 +70,7 @@
     a {
       color: $secondary;
       span {
-        color: $primary;
+        color: $yellow;
       }
     }
 
@@ -134,7 +129,7 @@
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: $primary;
+    background-color: $yellow;
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -146,7 +141,7 @@
   }
 
   a:hover, .active > a, li:hover > a {
-    color: $primary;
+    color: $yellow;
   }
 
   .drop-down ul {
