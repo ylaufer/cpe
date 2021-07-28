@@ -174,11 +174,10 @@
     font-size: 14px;
     font-weight: 500;
     text-transform: none;
-    color: darken($primary, 30);
   }
 
   .drop-down ul a:hover, .drop-down ul .active > a, .drop-down ul li:hover > a {
-    color: $primary;
+    color: $yellow;
   }
   
   .drop-down > a:after {
@@ -284,7 +283,7 @@ $mobile_nav_spacing: 15px;
   }
 
   a:hover, .active > a, li:hover > a {
-    color: $primary;
+    color: $yellow;
     text-decoration: none;
   }
 

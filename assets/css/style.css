@@ -212,11 +212,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 20px;
   font-size: 14px;
   font-weight: 500;
-  text-transform: none;
-  color: #062b5b; }
+  text-transform: none; }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #106eea; }
+  color: #fdc236; }
 
 .nav-menu .drop-down > a:after {
   content: "\ea99";
@@ -292,7 +291,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     outline: none; }
   .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-    color: #106eea;
+    color: #fdc236;
     text-decoration: none; }
   .mobile-nav .drop-down > a:after {
     content: "\ea99";
@@ -562,6 +561,12 @@ section {
 .about img {
   border-radius: 5px; }
 
+.about .content .marco {
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 0 25px 0 rgba(52, 58, 64, 0.1);
+  padding: 25px 25px; }
+
 .about .content .icon {
   margin-right: 15px;
   float: left;
@@ -710,7 +715,7 @@ section {
     margin: 0 auto;
     width: 64px;
     height: 64px;
-    background: #fff;
+    background: cornsilk;
     border-radius: 4px;
     border: 1px solid #a1aab3;
     display: flex;
