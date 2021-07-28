@@ -188,19 +188,26 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
+
+  h3 {
+      font-weight: 600;
+      font-size: 26px;
+    }
+
   img {
     border-radius: 5px;
   }
   .content {
-    h3 {
-      font-weight: 600;
-      font-size: 26px;
-    }
+    
     .icon {
       margin-right: 15px;
       float: left;
       color: #fdc236;
       font-size: 30px;
+    }
+
+    .icon_content {
+      overflow: hidden;
     }
 
     h5 {
@@ -214,19 +221,20 @@ section {
     }
 
     .in {
-      font-size: 13px;
+      font-size: 14px;
       line-height: 1.5;
     }
     
     ul {
-      padding: 0;
+      padding-left: 20px;
       list-style-type: square;
+      list-style-position: outside;
       
       li {
         align-items: flex-start;
-        list-style-type: square;
         color: #878787;
-        font-size: 13px;
+        font-size: 14px;
+        margin-bottom: 10px;
       }
 
       i {
@@ -758,11 +766,12 @@ section {
     border-radius: 4px;
     background: $white;
     box-shadow: 0px 2px 15px rgba($primary, 0.15);
-    
-    .member-img {
-      position: relative;
-      overflow: hidden;
-    }
+    position: relative;
+    overflow: hidden;
+
+    // .member-img {
+      
+    // }
 
     .social {
       position: absolute;
@@ -781,12 +790,12 @@ section {
         border-radius: 4px;
         width: 36px;
         height: 36px;
-        background: rgba($primary, .8);
+        background: rgba($yellow, .8);
         display: inline-block;
         transition: ease-in-out 0.3s;
         color: $white;
         &:hover {
-          background: lighten($primary, 10);
+          background: lighten($yellow, 10);
         }
 
       }
@@ -797,7 +806,7 @@ section {
     }
 
     .member-info {
-      padding: 25px 15px;
+      padding: 25px 25px;
       h4 {
         font-weight: 700;
         margin-bottom: 5px;
@@ -816,7 +825,14 @@ section {
         font-style: italic;
         font-size: 14px;
         line-height: 26px;
-        color: lighten($default, 20);
+        // color: lighten($default, 20);
+        
+
+      }
+      
+      ul {
+        list-style-type: square;
+        color: #878787;
       }
 
     }
@@ -963,7 +979,7 @@ section {
     a {
       display: block;
       position: relative;
-      font-family: $primary;
+      font-family: $font-default;
       font-size: 18px;
       font-weight: 500;
     }
@@ -981,13 +997,13 @@ section {
     }
 
     a.collapse {
-      color: $primary;
+      color: $yellow;
     }
 
     a.collapsed {
       color: $black;
       &:hover {
-        color: $primary;
+        color: $yellow;
       }
       i::before {
         content: "\eab2" !important;
@@ -1009,10 +1025,11 @@ section {
 
     i {
       font-size: 32px;
-      color: $primary;
+      color: $yellow;
       border-radius: 50%;
       padding: 8px;
-      border: 2px dotted lighten($primary, 35);
+      // border: 2px dotted lighten($yellow, 35);
+      border: 2px dotted $yellow
     }
 
     h3 {
@@ -1103,14 +1120,14 @@ section {
     }
 
     button[type="submit"] {
-      background: $primary;
+      background: $yellow;
       border: 0;
       padding: 10px 30px;
       color: #fff;
       transition: 0.4s;
       border-radius: 4px;
       &:hover {
-        background: lighten($primary, 10%);
+        background: lighten($yellow, 10%);
       }
     }
   

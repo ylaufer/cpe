@@ -9,7 +9,7 @@ a {
   color: #343a40; }
 
 a:hover {
-  color: #3b8af2;
+  color: #fed168;
   text-decoration: none; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -63,11 +63,11 @@ h1, h2, h3, h4, h5, h6 {
     width: 40px;
     height: 40px;
     border-radius: 4px;
-    background: #106eea;
+    background: #fdc236;
     color: #fff;
     transition: all 0.4s; }
     .back-to-top i:hover {
-      background: #3284f1;
+      background: #fdce5e;
       color: #fff; }
 
 /*--------------------------------------------------------------
@@ -555,18 +555,21 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about img {
-  border-radius: 5px; }
-
-.about .content h3 {
+.about h3 {
   font-weight: 600;
   font-size: 26px; }
+
+.about img {
+  border-radius: 5px; }
 
 .about .content .icon {
   margin-right: 15px;
   float: left;
   color: #fdc236;
   font-size: 30px; }
+
+.about .content .icon_content {
+  overflow: hidden; }
 
 .about .content h5 {
   font-size: 15px; }
@@ -577,17 +580,18 @@ section {
   color: #878787; }
 
 .about .content .in {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.5; }
 
 .about .content ul {
-  padding: 0;
-  list-style-type: square; }
+  padding-left: 20px;
+  list-style-type: square;
+  list-style-position: outside; }
   .about .content ul li {
     align-items: flex-start;
-    list-style-type: square;
     color: #878787;
-    font-size: 13px; }
+    font-size: 14px;
+    margin-bottom: 10px; }
   .about .content ul i {
     background: #fff;
     box-shadow: 0px 6px 15px rgba(16, 110, 234, 0.12);
@@ -957,10 +961,9 @@ section {
     overflow: hidden;
     border-radius: 4px;
     background: #fff;
-    box-shadow: 0px 2px 15px rgba(16, 110, 234, 0.15); }
-    .team .member .member-img {
-      position: relative;
-      overflow: hidden; }
+    box-shadow: 0px 2px 15px rgba(16, 110, 234, 0.15);
+    position: relative;
+    overflow: hidden; }
     .team .member .social {
       position: absolute;
       left: 0;
@@ -977,16 +980,16 @@ section {
         border-radius: 4px;
         width: 36px;
         height: 36px;
-        background: rgba(16, 110, 234, 0.8);
+        background: rgba(253, 194, 54, 0.8);
         display: inline-block;
         transition: ease-in-out 0.3s;
         color: #fff; }
         .team .member .social a:hover {
-          background: #3b8af2; }
+          background: #fed168; }
       .team .member .social i {
         font-size: 18px; }
     .team .member .member-info {
-      padding: 25px 15px; }
+      padding: 25px 25px; }
       .team .member .member-info h4 {
         font-weight: 700;
         margin-bottom: 5px;
@@ -1000,8 +1003,10 @@ section {
       .team .member .member-info p {
         font-style: italic;
         font-size: 14px;
-        line-height: 26px;
-        color: #777777; }
+        line-height: 26px; }
+      .team .member .member-info ul {
+        list-style-type: square;
+        color: #878787; }
     .team .member:hover .social {
       opacity: 1;
       bottom: 15px; }
@@ -1106,7 +1111,7 @@ section {
     .faq .faq-list a {
       display: block;
       position: relative;
-      font-family: #106eea;
+      font-family: "Open Sans", sans-serif;
       font-size: 18px;
       font-weight: 500; }
     .faq .faq-list i {
@@ -1118,11 +1123,11 @@ section {
       margin-bottom: 20px;
       font-size: 15px; }
     .faq .faq-list a.collapse {
-      color: #106eea; }
+      color: #fdc236; }
     .faq .faq-list a.collapsed {
       color: #343a40; }
       .faq .faq-list a.collapsed:hover {
-        color: #106eea; }
+        color: #fdc236; }
       .faq .faq-list a.collapsed i::before {
         content: "\eab2" !important; }
 
@@ -1136,10 +1141,10 @@ section {
   padding: 20px 0 30px 0; }
   .contact .info-box i {
     font-size: 32px;
-    color: #106eea;
+    color: #fdc236;
     border-radius: 50%;
     padding: 8px;
-    border: 2px dotted #b3d1fa; }
+    border: 2px dotted #fdc236; }
   .contact .info-box h3 {
     font-size: 20px;
     color: #777777;
@@ -1202,14 +1207,14 @@ section {
   .contact .php-email-form textarea {
     padding: 12px 15px; }
   .contact .php-email-form button[type="submit"] {
-    background: #106eea;
+    background: #fdc236;
     border: 0;
     padding: 10px 30px;
     color: #fff;
     transition: 0.4s;
     border-radius: 4px; }
     .contact .php-email-form button[type="submit"]:hover {
-      background: #3b8af2; }
+      background: #fed168; }
 
 @keyframes animate-loading {
   0% {
@@ -1258,13 +1263,13 @@ section {
         background: none;
         font-size: 16px;
         padding: 0 20px;
-        background: #106eea;
+        background: #fdc236;
         color: #fff;
         transition: 0.3s;
         border-radius: 0 4px 4px 0;
         box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); }
         #footer .footer-newsletter form input[type="submit"]:hover {
-          background: #0d58ba; }
+          background: #fcb304; }
   #footer .footer-top {
     padding: 60px 0 30px 0;
     background: #fff; }
@@ -1277,7 +1282,7 @@ section {
         line-height: 1;
         font-weight: 700; }
         #footer .footer-top .footer-contact h3 span {
-          color: #106eea; }
+          color: #fdc236; }
       #footer .footer-top .footer-contact p {
         font-size: 14px;
         line-height: 24px;
@@ -1290,15 +1295,25 @@ section {
       color: #444444;
       position: relative;
       padding-bottom: 12px; }
+    #footer .footer-top .city {
+      margin: 10px 0; }
     #footer .footer-top .footer-links {
       margin-bottom: 30px; }
+      #footer .footer-top .footer-links .centrar {
+        text-align: center; }
+        #footer .footer-top .footer-links .centrar .aca {
+          font-size: 32px;
+          color: #fdc236;
+          border-radius: 50%;
+          padding: 8px;
+          border: 2px dotted #fdc236; }
       #footer .footer-top .footer-links ul {
         list-style: none;
         padding: 0;
         margin: 0; }
         #footer .footer-top .footer-links ul i {
           padding-right: 2px;
-          color: #106eea;
+          color: #fdc236;
           font-size: 18px;
           line-height: 1; }
         #footer .footer-top .footer-links ul li {
@@ -1314,7 +1329,7 @@ section {
           line-height: 1; }
           #footer .footer-top .footer-links ul a:hover {
             text-decoration: none;
-            color: #106eea; }
+            color: #fdc236; }
     #footer .footer-top .social-links a {
       font-size: 18px;
       display: inline-block;

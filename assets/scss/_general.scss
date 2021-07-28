@@ -11,7 +11,7 @@ a {
 }
 
 a:hover {
-  color: lighten($primary, 10);
+  color: lighten($yellow, 10);
   text-decoration: none;
 }
 
@@ -69,11 +69,11 @@ h1, h2, h3, h4, h5, h6 {
     width: 40px;
     height: 40px;
     border-radius: 4px;
-    background: $primary;
+    background: $yellow;
     color: #fff;
     transition: all 0.4s;
     &:hover  {
-      background: lighten($primary, 8);
+      background: lighten($yellow, 8);
       color: #fff;
     }
   }
